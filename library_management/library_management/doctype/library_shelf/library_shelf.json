@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:shelf_code",
+ "creation": "2026-03-17 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shelf_code",
+  "branch",
+  "room",
+  "section_name",
+  "rack",
+  "shelf_label",
+  "parent_shelf",
+  "is_active",
+  "description"
+ ],
+ "fields": [
+  {"fieldname": "shelf_code", "fieldtype": "Data", "in_list_view": 1, "label": "Shelf Code", "reqd": 1, "unique": 1},
+  {"fieldname": "branch", "fieldtype": "Data", "in_list_view": 1, "label": "Branch / Library"},
+  {"fieldname": "room", "fieldtype": "Data", "label": "Room"},
+  {"fieldname": "section_name", "fieldtype": "Data", "in_list_view": 1, "label": "Section"},
+  {"fieldname": "rack", "fieldtype": "Data", "label": "Rack"},
+  {"fieldname": "shelf_label", "fieldtype": "Data", "label": "Shelf Label"},
+  {"fieldname": "parent_shelf", "fieldtype": "Link", "label": "Parent Shelf", "options": "Library Shelf"},
+  {"default": "1", "fieldname": "is_active", "fieldtype": "Check", "label": "Active"},
+  {"fieldname": "description", "fieldtype": "Small Text", "label": "Description"}
+ ],
+ "links": [],
+ "modified": "2026-03-17 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Shelf",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "print": 1, "read": 1, "report": 1, "role": "Library Manager", "share": 1, "write": 1},
+  {"create": 1, "email": 1, "print": 1, "read": 1, "report": 1, "role": "Librarian", "share": 1, "write": 1},
+  {"create": 1, "read": 1, "report": 1, "role": "Library Assistant", "write": 1}
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

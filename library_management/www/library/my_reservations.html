@@ -1,0 +1,25 @@
+<h1>My Library Reservations</h1>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Reservation</th>
+			<th>Item</th>
+			<th>Copy</th>
+			<th>Status</th>
+			<th>Queue</th>
+			<th>Expires On</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for row in reservations %}
+		<tr>
+			<td>{{ row.name }}</td>
+			<td>{{ row.item }}</td>
+			<td>{{ row.copy }}</td>
+			<td>{{ row.status }}</td>
+			<td>{{ row.queue_position }}</td>
+			<td>{{ row.expires_on }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
