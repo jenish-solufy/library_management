@@ -4,7 +4,7 @@ authors = [
     { name = "Sahil", email = "admin@sahil.com"}
 ]
 description = "Production-ready library management for ERPNext"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 readme = "README.md"
 version = "0.0.1"
 dependencies = [
@@ -21,7 +21,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.ruff]
 line-length = 110
-target-version = "py314"
+target-version = "py311"
 
 [tool.ruff.lint]
 select = [
