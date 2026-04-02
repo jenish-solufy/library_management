@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plan_name",
+ "creation": "2026-03-17 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "library_mode",
+  "is_paid_membership",
+  "fee_amount",
+  "deposit_amount",
+  "validity_days",
+  "default_member_category",
+  "is_active",
+  "description"
+ ],
+ "fields": [
+  {"fieldname": "plan_name", "fieldtype": "Data", "in_list_view": 1, "label": "Plan Name", "reqd": 1, "unique": 1},
+  {"default": "Independent", "fieldname": "library_mode", "fieldtype": "Select", "label": "Library Mode", "options": "School\nIndependent\nHybrid"},
+  {"default": "0", "fieldname": "is_paid_membership", "fieldtype": "Check", "label": "Paid Membership"},
+  {"default": "0", "fieldname": "fee_amount", "fieldtype": "Currency", "label": "Fee Amount"},
+  {"default": "0", "fieldname": "deposit_amount", "fieldtype": "Currency", "label": "Deposit Amount"},
+  {"default": "365", "fieldname": "validity_days", "fieldtype": "Int", "label": "Validity (Days)"},
+  {"default": "Public Member", "fieldname": "default_member_category", "fieldtype": "Select", "label": "Default Member Category", "options": "\nStudent\nTeacher\nStaff\nPublic Member\nGuest"},
+  {"default": "1", "fieldname": "is_active", "fieldtype": "Check", "label": "Active"},
+  {"fieldname": "description", "fieldtype": "Small Text", "label": "Description"}
+ ],
+ "links": [],
+ "modified": "2026-03-17 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Membership Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "print": 1, "read": 1, "report": 1, "role": "Library Manager", "share": 1, "write": 1},
+  {"create": 1, "email": 1, "print": 1, "read": 1, "report": 1, "role": "Librarian", "share": 1, "write": 1},
+  {"read": 1, "report": 1, "role": "Library Assistant"}
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

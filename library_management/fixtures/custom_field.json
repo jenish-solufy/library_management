@@ -1,0 +1,228 @@
+[
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_section",
+    "fieldtype": "Section Break",
+    "insert_after": "has_serial_no",
+    "label": "Library Management",
+    "module": "Library Management",
+    "name": "Item-library_section"
+  },
+  {
+    "default": "1",
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_is_catalog_item",
+    "fieldtype": "Check",
+    "insert_after": "library_section",
+    "label": "Library Catalog Item",
+    "module": "Library Management",
+    "name": "Item-library_is_catalog_item"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_material_type",
+    "fieldtype": "Select",
+    "insert_after": "library_is_catalog_item",
+    "label": "Library Material Type",
+    "module": "Library Management",
+    "name": "Item-library_material_type",
+    "options": "\nBook\nJournal\nMagazine\nNewspaper\nThesis\nAudio\nVideo\nDVD\neBook\nReference Material\nManuscript\nArchive"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_is_reference_only",
+    "fieldtype": "Check",
+    "insert_after": "library_material_type",
+    "label": "Reference Only",
+    "module": "Library Management",
+    "name": "Item-library_is_reference_only"
+  },
+  {
+    "default": "1",
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_is_borrowable",
+    "fieldtype": "Check",
+    "insert_after": "library_is_reference_only",
+    "label": "Borrowable",
+    "module": "Library Management",
+    "name": "Item-library_is_borrowable"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_default_loan_period",
+    "fieldtype": "Int",
+    "insert_after": "library_is_borrowable",
+    "label": "Default Loan Period (Days)",
+    "module": "Library Management",
+    "name": "Item-library_default_loan_period"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_isbn_10",
+    "fieldtype": "Data",
+    "insert_after": "library_default_loan_period",
+    "label": "ISBN-10",
+    "module": "Library Management",
+    "name": "Item-library_isbn_10"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_isbn_13",
+    "fieldtype": "Data",
+    "insert_after": "library_isbn_10",
+    "label": "ISBN-13",
+    "module": "Library Management",
+    "name": "Item-library_isbn_13"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_authors",
+    "fieldtype": "Small Text",
+    "insert_after": "library_isbn_13",
+    "label": "Authors",
+    "module": "Library Management",
+    "name": "Item-library_authors"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_publisher",
+    "fieldtype": "Data",
+    "insert_after": "library_authors",
+    "label": "Publisher",
+    "module": "Library Management",
+    "name": "Item-library_publisher"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_edition",
+    "fieldtype": "Data",
+    "insert_after": "library_publisher",
+    "label": "Edition",
+    "module": "Library Management",
+    "name": "Item-library_edition"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_language",
+    "fieldtype": "Data",
+    "insert_after": "library_edition",
+    "label": "Language",
+    "module": "Library Management",
+    "name": "Item-library_language"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_publication_year",
+    "fieldtype": "Int",
+    "insert_after": "library_language",
+    "label": "Publication Year",
+    "module": "Library Management",
+    "name": "Item-library_publication_year"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_subject",
+    "fieldtype": "Data",
+    "insert_after": "library_publication_year",
+    "label": "Subject / Genre",
+    "module": "Library Management",
+    "name": "Item-library_subject"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_classification_code",
+    "fieldtype": "Data",
+    "insert_after": "library_subject",
+    "label": "Classification Code",
+    "module": "Library Management",
+    "name": "Item-library_classification_code"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_keywords",
+    "fieldtype": "Small Text",
+    "insert_after": "library_classification_code",
+    "label": "Keywords",
+    "module": "Library Management",
+    "name": "Item-library_keywords"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_summary",
+    "fieldtype": "Small Text",
+    "insert_after": "library_keywords",
+    "label": "Summary / Abstract",
+    "module": "Library Management",
+    "name": "Item-library_summary"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_front_cover",
+    "fieldtype": "Attach Image",
+    "insert_after": "library_summary",
+    "label": "Front Cover",
+    "module": "Library Management",
+    "name": "Item-library_front_cover"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "library_back_cover",
+    "fieldtype": "Attach Image",
+    "insert_after": "library_front_cover",
+    "label": "Back Cover",
+    "module": "Library Management",
+    "name": "Item-library_back_cover"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Sales Invoice",
+    "fieldname": "library_member",
+    "fieldtype": "Link",
+    "insert_after": "customer",
+    "label": "Library Member",
+    "module": "Library Management",
+    "name": "Sales Invoice-library_member",
+    "options": "Library Member"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Sales Invoice",
+    "fieldname": "library_transaction",
+    "fieldtype": "Link",
+    "insert_after": "library_member",
+    "label": "Library Transaction",
+    "module": "Library Management",
+    "name": "Sales Invoice-library_transaction",
+    "options": "Library Transaction"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Sales Invoice",
+    "fieldname": "library_fine",
+    "fieldtype": "Link",
+    "insert_after": "library_transaction",
+    "label": "Library Fine",
+    "module": "Library Management",
+    "name": "Sales Invoice-library_fine",
+    "options": "Library Fine"
+  }
+]

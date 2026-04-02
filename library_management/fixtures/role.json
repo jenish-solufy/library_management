@@ -1,0 +1,34 @@
+[
+  {
+    "desk_access": 1,
+    "disabled": 0,
+    "doctype": "Role",
+    "is_custom": 0,
+    "name": "Library Manager",
+    "role_name": "Library Manager"
+  },
+  {
+    "desk_access": 1,
+    "disabled": 0,
+    "doctype": "Role",
+    "is_custom": 0,
+    "name": "Librarian",
+    "role_name": "Librarian"
+  },
+  {
+    "desk_access": 1,
+    "disabled": 0,
+    "doctype": "Role",
+    "is_custom": 0,
+    "name": "Library Assistant",
+    "role_name": "Library Assistant"
+  },
+  {
+    "desk_access": 1,
+    "disabled": 0,
+    "doctype": "Role",
+    "is_custom": 0,
+    "name": "Library Member",
+    "role_name": "Library Member"
+  }
+]
